@@ -1,0 +1,225 @@
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    h1,
+    h2 {
+        font-weight: 500;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    #wrap {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    #cart_layout_1 {
+        color: #808080;
+    }
+    
+    #cart_layout_1 h1 {
+        font-size: 2rem;
+    }
+    
+    .container-info {
+        border-top: 2px solid #e6e6e6;
+        border-bottom: 2px solid #e6e6e6;
+    }
+    
+    .body-cart {
+        background-color: #fff;
+    }
+    
+    .cart_info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        height: 12.5rem;
+    }
+    
+    .product img {
+        max-height: 12.5rem;
+    }
+    
+    .product_info {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        margin: auto;
+    }
+    
+    .product_info span {
+        font-size: 1rem;
+        color: #292929;
+        font-weight: 700;
+    }
+    
+    .qty,
+    .price,
+    .remove {
+        text-align: center;
+    }
+    
+    .qty span {
+        font-size: 1.8em;
+        color: #292929;
+    }
+    
+    .qty input {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    .price {
+        font-size: 1rem;
+        color: #292929;
+        top: 10px;
+    }
+    
+    .remove {
+        font-size: 2.5rem;
+    }
+    
+    .complete_cart {
+        padding-top: 15px
+    }
+    
+    .updated h2 {
+        font-size: 1rem;
+    }
+    
+    .state {
+        margin: 15px 0px;
+    }
+    
+    .state select {
+        padding: 5px;
+        font-size: 1rem;
+        border-radius: 0;
+    }
+    
+    .button {
+        margin-top: 15px;
+        background: linear-gradient(to right, #B06AB3, #4568DC);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 35px;
+        color: #FFF;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 1.3rem;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background: linear-gradient(180deg, #B06AB3 0%, #B06AB3 49%, #4568DC 50%, #4568DC 100%);
+        background-size: 1px 100px;
+        background-position: 0 -50px;
+        transition: all .5s;
+    }
+    
+    .complete_cart {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #e6e6e6;
+    }
+    
+    .checkout {
+        width: 60%;
+    }
+    
+    .amount {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .checkout h2 {
+        font-size: 1rem;
+    }
+    
+    .sub {
+        display: block;
+        margin-top: -25px;
+    }
+    
+    .owerall {
+        font-size: 1rem;
+        color: #292929;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+    }
+    
+    .subtotal {
+        bottom: 20px;
+    }
+    
+    .total {
+        bottom: 0;
+    }
+    
+    .bfb {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+    }
+    
+    .item_actions ul {
+        list-style: none;
+    }
+    
+    .item_actions a {
+        text-decoration: none;
+        color: #3483fa;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 13px;
+    }
+    
+    .item_actions {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .item_actions ul {
+        display: flex;
+    }
+    
+    .item_actions li {
+        margin: 0 5px;
+    }
+    
+    @media screen and (min-width: 769px) {
+        .item_actions {
+            margin-left: 30%;
+        }
+        .updated h2 {
+            font-size: 1.5rem;
+        }
+        .checkout h2 {
+            font-size: 1.5rem;
+        }
+        .subtotal {
+            bottom: 35px;
+        }
+        .owerall {
+            font-size: 1.3rem;
+        }
+        .checkout {
+            width: 50%;
+        }
+        .state select {
+            width: 16.75rem;
+        }
+        .t_total {
+            padding-left: 30%;
+        }
+    }

@@ -1,0 +1,210 @@
+:root {
+    --colorTextos: #49454567;
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 80px;
+    font-family: 'Roboto';
+    background-color: #1d1d1d;
+    /* height: 650px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+form{
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .group{
+    position: relative;
+    margin: 45px ;
+}
+.select1{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    margin-left: 150px;
+}
+
+
+
+
+input{
+    background: none;
+    color: #0a0909;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+}
+
+.labelLogin {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+a{
+    margin-left: 15px;;
+}
+
+.bar{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #cbb914, #4568DC);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.bar::before{
+    width: 100%;
+}
+
+div.cbox1{
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+input.remember_password{
+    
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: .5rem;
+    background-size: cover;
+}
+
+
+
+button{
+    font-family: 'roboto';
+    background: #4568DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+
+    background: linear-gradient(180deg, #B06AB3 0%, #B06AB3 49%, #4568DC 50%, #4568DC 100%);
+    background-size: 1px 100px;
+    background-position: 0 -50px;
+    transition: all .5s;
+
+    
+}
+
+/* @media screen and (max-width:500px){
+    form{
+        width: 80%;
+    }
+} */
+
+.logoFooter{
+    display: none;
+}
+
+.logoHome{
+    width: 100px;
+    align-items: center;
+}
+
+
+@media (min-width: 769px) {
+    .logoFooter{
+        display: block;
+    }
+    .logoHome{
+        display: none;
+    }
+    body{
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logoFooter{
+        display: block;
+    }
+    .logoHome{
+        display: none;
+    }
+    body{
+        justify-content: space-around;
+    }
+}

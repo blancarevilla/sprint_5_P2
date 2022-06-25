@@ -1,0 +1,196 @@
+body {
+    background-color: #eaeaea;
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+.productImage img{
+    height: 70%;
+    object-fit: contain;
+}
+
+.card-detail {
+    background: white;
+    margin-bottom: 2em;
+}
+
+.card-detail a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-detail a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+    padding: 1.4em;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-size: 100%;
+}
+
+.mainCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-variant: small-caps;
+}
+
+.card-detail {
+    flex: 0 1 30%;
+}
+
+.productImage {
+    flex: 0 1 50%;
+}
+
+.cartCard {
+    background: white;
+    margin-bottom: 2em;
+    flex: 0 1 15%;
+    height: 29rem;
+}
+
+
+/* .cartCard a {
+    color: black;
+    text-decoration: none;
+} */
+
+.cartCard a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.cartCard-content {
+    padding: 1.4em;
+}
+
+.cartCard-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.cartCard-content p {
+    font-size: 80%;
+}
+
+.descriptionCard {
+    height: 29rem;
+    overflow: auto;
+    background: white;
+    margin-bottom: 2em;
+    flex: 0 1 30%;
+}
+
+.descriptionCard a {
+    color: black;
+    text-decoration: none;
+}
+
+.descriptionCard a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.descriptionCard-content {
+    padding: 1.4em;
+}
+
+.descriptionCard-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.descriptionCard-content p {
+    font-size: 100%;
+}
+
+.cartCard a {
+    padding-top: 10px;
+}
+
+.buttonDetail {
+    font-family: 'roboto';
+    background: #4568DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttonDetail:hover {
+    background: linear-gradient(180deg, #B06AB3 0%, #B06AB3 49%, #4568DC 50%, #4568DC 100%);
+    background-size: 1px 100px;
+    background-position: 0 -50px;
+    transition: all .5s;
+}
+
+.delete {
+    background: linear-gradient(to right, #ce3548, #4568DC);
+}
+
+@media (min-width: 768px) {
+    .mainCards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productImage {
+        flex: 0 1 30%;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mainCards {
+        display: flex;
+        flex-direction: row;
+    }
+    .productImage {
+        flex: 0 1 40%;
+    }
+
+    .descriptionCard {
+        flex: 0 1 40%;
+    }
+
+    .cartCard {
+        flex: 0 1 17%;
+    }
+}

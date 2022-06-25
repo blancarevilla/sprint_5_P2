@@ -1,0 +1,14 @@
+Tipo de letra: Roboto
+Tamaño de los titulos: h1 y h2 titulo y subtitulo (tamaño por defecto)
+Tamaño de los textos: usar p (tamaño por defecto)
+Color de los titulos:#808080
+color de los textos: black
+Tamaño de los botones: height: 40px; width adaptable
+Color de las letras botones: white
+Color header: #000
+Color footer: #1D1D1D
+Medidas en css: rem, porcentajes
+Media queries: 391, 769 y 1200
+Clases: en inglés, propiedades ordenadas alfabeticamente en css, con guión medio
+Imágenes: jpg, png
+Usar display flex para posicionar elementos en pantalla

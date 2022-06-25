@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--HEAD-->
+<%- include('partials/head')  %>
+
+    <body>
+        <!--HEADER-->
+        <%- include('partials/header')  %>
+
+            <main>
+                <section class="mainCards">
+                    <article class="productImage">
+                        <img src="/images/products/<%= product.image%>" alt="Torre Eiffel">
+                    </article>
+
+                    <article class="descriptionCard">
+
+                        <div class="descriptionCard-content">
+
+                            <h2>
+                                <%- product.name %>
+                            </h2>
+                            <h3>Precio: $
+                                <%- product.price %>
+                            </h3>
+                            <p>
+                                <%- product.descriptionDetail %>
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="cartCard">
+                        <div class="cartCard-content">
+                            <h2> $
+                                <%= product.price %>
+                            </h2>
+                            <p>
+                                <%= product.stock =="1"?"Este producto puede ser enviado":"Este producto no puede ser enviado" %>
+                            </p>
+                            <p>Stock:
+                                <%= product.stock %>
+                            </p>
+                            <button type="submit" class="buttonDetail">Añadir al carrito </button>
+                            <button type="submit" class="buttonDetail">Compra 1-click </button>
+                            <p><i class="fa fa-lock"></i> Transaccion segura</p>
+                            <h5>Vendido por: GiantsMarket</h5>
+                            <a href="/views/edit/<%= product.id %>" class="buttonDetail">Editar Producto</a>
+                            <form action="/delete/<%= product.id %>?_method=DELETE" method="POST">
+                                <button type="submit" class="buttonDetail delete">Eliminar Producto</button>
+                            </form>
+                        </div>
+                    </article>
+                </section>
+
+            </main>
+
+            <!--FOOTER-->
+            <%- include('partials/footer')  %>
+
+
+
+    </body>
+
+</html>

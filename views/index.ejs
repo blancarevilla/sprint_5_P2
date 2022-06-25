@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--HEAD-->
+<%- include('partials/head')  %>
+
+    <body>
+        <!--HEADER-->
+        <%- include('partials/header')  %>
+
+            <main>
+                <section class="cards">
+
+                    <% products.forEach(product => { %>
+
+                        <article class="card">
+                            <!-- <section class="product-box"> -->
+                            <a href="/productDetail/<%= product.id%>">
+                                <picture>
+                                    <img src="/images/products/<%= product.image%>" class="thumbnail" alt="imagen de producto">
+                                </picture>
+                                <div class="card-content">
+                                    <h2>
+                                        <%= product.name%>
+                                    </h2>
+                                    <p>
+                                        <%= product.description%>
+                                    </p>
+                                    <p>$
+                                        <%= product.price%>
+                                    </p>
+                                </div>
+                            </a>
+                            <!-- </section> -->
+                        </article>
+                        <% }) %>
+
+                            <!-- <article class="card">
+                <a href="/productDetail">
+                    <picture>
+                        <img class="thumbnail" src="/images/thumbnailTower.jpg" alt="Torre Eiffel">
+                    </picture>
+                    <div class="card-content">
+
+                        <h2>Torre Eiffel</h2>
+                        <p>Por si te quieres dar un regalito, este pequeño capricho puede ser tuyo</p>
+                        <p>85mm usd</p>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="card">
+                <a href="#">
+                    <picture>
+                        <img class="thumbnail" src="/images/thumbnailGoogle.png" alt="google">
+                    </picture>
+                    <div class="card-content">
+
+                        <h2>Google</h2>
+                        <p>El motor de busqueda mas grande del planeta. Con esto podrias controlar toda la informacion a tu favor.</p>
+                        <p>250mm usd</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="card">
+                <a href="#">
+                    <picture>
+                        <img class="thumbnail" src="/images/thumbnailTwitter.png" alt="Twitter">
+                    </picture>
+                    <div class="card-content">
+
+                        <h2>Twitter</h2>
+                        <p>Articulo no disponible.</p>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="card">
+                <a href="#">
+                    <picture>
+                        <img class="thumbnail" src="images/mapa.jpg" alt="mapas">
+                    </picture>
+                    <div class="card-content">
+
+                        <h2>Paises</h2>
+                        <p>Por si quieres probar la experiencia de ser un dictador, puedes comprar el pais que quieras (mientras este disponible)</p>
+                    </div>
+                </a>
+            </article>-->
+                </section>
+            </main>
+            <!--FOOTER-->
+            <%- include('partials/footer')  %>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "first_name": "Cristal",
+        "last_name": "Ogilby",
+        "email": "ayuda@gmail.com",
+        "gender": "Female",
+        "date": "4/24/2086",
+        "password": 12345678,
+        "rol": "administrador"
+    },
+    {
+        "id": 2,
+        "first_name": "Gertrude",
+        "last_name": "Championnet",
+        "email": "ayuda1@gmail.com",
+        "gender": "Female",
+        "date": "11/10/1984",
+        "password": "12345",
+        "rol": "usuario"
+    },
+    {
+        "id": 3,
+        "first_name": "Yoshi",
+        "last_name": "Impy",
+        "email": "sos@gmail.com",
+        "gender": "Female",
+        "date": "1/5/2057",
+        "password": "12345",
+        "rol": "administrador"
+    },
+    {
+        "id": 4,
+        "first_name": "Shay",
+        "last_name": "Bickley",
+        "email": "ayudasos@gmail.com",
+        "gender": "Female",
+        "date": "5/1/2044",
+        "password": "12345",
+        "rol": "usuario"
+    },
+    {
+        "id": 5,
+        "first_name": "Costa",
+        "last_name": "Lavis",
+        "email": "clavis4@epa.gov",
+        "gender": "Male",
+        "date": "9/21/1997",
+        "password": "12345",
+        "rol": "administrador"
+    },
+    {
+        "id": 6,
+        "first_name": "Ansell",
+        "last_name": "Tremmil",
+        "email": "atremmil5@flickr.com",
+        "gender": "Polygender",
+        "date": "4/7/1986",
+        "password": "YJp9EwgH"
+    },
+    {
+        "id": 7,
+        "first_name": "Karine",
+        "last_name": "Tims",
+        "email": "ktims6@hatena.ne.jp",
+        "gender": "Female",
+        "date": "7/1/2010",
+        "password": "wf5wbn"
+    },
+    {
+        "id": 8,
+        "first_name": "Christiano",
+        "last_name": "Gallichan",
+        "email": "cgallichan7@google.fr",
+        "gender": "Male",
+        "date": "5/3/1966",
+        "password": "UEVh87q"
+    },
+    {
+        "id": 9,
+        "first_name": "Dave",
+        "last_name": "Barreau",
+        "email": "dbarreau8@hhs.gov",
+        "gender": "Male",
+        "date": "1/24/1985",
+        "password": "ucCmjfr3mYuQ"
+    },
+    {
+        "id": 10,
+        "first_name": "Sam",
+        "last_name": "Slateford",
+        "email": "sslateford9@foxnews.com",
+        "gender": "Male",
+        "date": "8/3/1951",
+        "password": "e5Atwn3UN"
+    },
+    {
+        "id": 11,
+        "first_name": "Blanca",
+        "lastname": "Revilla",
+        "email": "blancaindira@hotmail.com",
+        "password": "11111111",
+        "date": "2022-06-16",
+        "gender": "mujer",
+        "rol": "admin",
+        "image": "image-1655670367326-97951192.png"
+    },
+    {
+        "id": 12,
+        "first_name": "Blanca",
+        "lastname": "Revilla",
+        "email": "blancaindira@hotmail.com",
+        "password": "11111111",
+        "date": "2022-06-17",
+        "gender": "mujer",
+        "rol": "admin",
+        "image": "image-1655671766780-445179325.png"
+    }
+]

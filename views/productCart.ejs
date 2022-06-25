@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEAD-->
+<%- include('partials/head')  %>
+
+    <body class="body-cart">
+        <!--HEADER-->
+        <%- include('partials/header')  %>
+            <main id="wrap">
+                <% unique.forEach(product => { %>
+                    <div id="cart_layout_1">
+                        <h1>Carrito de compras</h1>
+                        <section class="container-info">
+                            <div class="cart_info">
+                                <div class="product">
+                                    <img src="/images/products/%= product.image%>" />
+                                </div>
+                                <article class="product_info">
+                                    <span class="center"><%= product.name%></span>
+                                    <div class="price">
+                                        <span>$ <%= product.price%></span>
+                                    </div>
+                                    <div class="remove">
+                                        <i class="fa fa-times-circle fa-4"></i>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="item_actions">
+                                <ul class="item-menu">
+                                    <li><a href="#">Más productos del vendedor</a></li>
+                                    <li><a href="#">Comprar ahora</a></li>
+                                    <li><a href="#">Guardar para después</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="complete_cart">
+                            <div class="updated">
+                                <h2>Dirección de envío</h2>
+                                <div class="state">
+                                    <select id="state">
+                   <option value = "1">Santiago</option>
+                   <option value = "2">Viña del Mar</option>
+                   <option value = "3">Concepción</option>
+                   <option value = "4">Valparaiso</option>
+                 </select>
+                                </div>
+                            </div>
+                            <div class="checkout">
+                                <div class="t_total">
+                                    <h2>Subtotal:</h2>
+                                    <h2>Total:</h2>
+                                </div>
+                                <div class="amount">
+                                    <span class="owerall subtotal">$ <%= product.price%></span>
+                                    <span class="owerall total">$ <%= product.price%></span>
+                                </div>
+                                <div class="bfb">
+                                    <a class="button" href="#">Comprar Ahora</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <% }) %>
+            </main>
+            <!--FOOTER-->
+            <%- include('partials/footer')  %>
+    </body>
+
+</html>
